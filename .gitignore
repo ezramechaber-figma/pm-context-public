@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+.env.*
+env/
+venv/
+ENV/
+tools/asana-cli/venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unified config (contains API tokens)
+config.json
+
+# Legacy tool-specific configs (deprecated, but still ignored)
+tools/asana-cli/.asana_cli_config.json
+.asana_cli_config.json
+tools/coda-cli/.coda_cli_config.json
+.coda_cli_config.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db

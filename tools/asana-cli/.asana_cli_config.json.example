@@ -1,0 +1,7 @@
+{
+  "api_token": "YOUR_ASANA_API_TOKEN_HERE",
+  "project_ids": [
+    "1210729963039941"
+  ],
+  "assignee": "YOUR_USER_ID_HERE"
+}

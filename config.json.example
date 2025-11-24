@@ -1,0 +1,12 @@
+{
+  "asana": {
+    "api_token": "YOUR_ASANA_API_TOKEN_HERE",
+    "project_ids": [
+      "YOUR_PERSONAL_TASKS_PROJECT_ID_HERE"
+    ],
+    "assignee": "YOUR_USER_ID_HERE"
+  },
+  "coda": {
+    "api_token": "YOUR_CODA_API_TOKEN_HERE"
+  }
+}
