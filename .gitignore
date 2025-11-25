@@ -29,11 +29,11 @@ wheels/
 # Unified config (contains API tokens)
 config.json
 
-# Legacy tool-specific configs (deprecated, but still ignored)
-tools/asana-cli/.asana_cli_config.json
-.asana_cli_config.json
-tools/coda-cli/.coda_cli_config.json
-.coda_cli_config.json
+# MCP config symlink (user-specific path)
+.mcp.json
+
+# Devex symlink to monorepo (user-specific path)
+devex/
 
 # IDE
 .vscode/

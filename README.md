@@ -4,7 +4,7 @@ A comprehensive context management system for Product Managers using Claude Code
 
 [![thumbnail](https://github.com/user-attachments/assets/e2f0a3ec-46f5-426e-99aa-6e6825529b86)](https://www.loom.com/share/1fbfa633e7c64378a2abaf2892e84aac)
 
-**Note:** This documentation and project assumes you have access to the monorepo figma/figma. If you don't, the MCPs won't work. Because Asana's MCP (as well as Notion/Slack) are only scoped to public info, I actually don't use the MCPs much. Instead, I find myself using custom CLIs for Asana and Coda, and the Clockwise MCP which isn't part of the repo.
+**Note:** This repo includes custom CLIs for Asana and Coda that work independently. If you have MCP servers configured (Notion, Slack, Clockwise, etc.), you can optionally create a symlink to your `.mcp.json` config file. The MCPs are optional - the core functionality (CLIs and slash commands) works without them.
 
 ## Goal
 
@@ -19,12 +19,19 @@ With this context, Claude can help you draft documents, brainstorm ideas, manage
 
 ## Quick Start
 
-### 1. Clone and Personalize
+### 1. Clone and Run Bootstrap
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/pm-context-public.git
 cd pm-context-public
+./bootstrap.sh
 ```
+
+The bootstrap script will:
+- Create `config.json` from the example
+- Set up your `.mcp.json` symlink (optional)
+- Make CLI scripts executable
+- Guide you through next steps
 
 ### 2. Configure Your Context
 
@@ -54,15 +61,9 @@ My goal is to [YOUR PRIMARY GOAL].
 - Stakeholders (manager, skip-level, key executives)
 - CLI tool paths (update to match your local setup)
 
-### 3. Set Up API Keys
+### 3. Add Your API Keys
 
-Create your config file from the example:
-
-```bash
-cp config.json.example config.json
-```
-
-Edit `config.json` with your API credentials:
+The bootstrap script created `config.json` for you. Now edit it with your API credentials:
 
 #### Get Asana API Token
 1. Go to https://app.asana.com/0/my-apps
@@ -234,9 +235,9 @@ Example prompts:
 ### Security Notes
 
 - `config.json` is gitignored - your API keys stay local
+- `.mcp.json` is also gitignored - create your own symlink to your MCP config
 - Consider using a separate Asana project for personal tasks
 - Review what context you commit to git (especially if making this public)
-- The `.mcp.json` file is symlinked to ~/figma/figma which is where your monorepo should be installed locally - update if your MCP config is elsewhere
 
 ## Customization Ideas
 
