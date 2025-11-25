@@ -2,6 +2,8 @@
 
 A comprehensive context management system for Product Managers using Claude Code. This repository provides tools, templates, and workflows to help Claude understand your role, projects, and stakeholders - making it a more effective product coach and assistant.
 
+**Note:** This documentation and project assumes you have access to the monorepo figma/figma. If you don't, the MCPs won't work. Because Asana's MCP (as well as Notion/Slack) are only scoped to public info, I actually don't use the MCPs much. Instead, I find myself using custom CLIs for Asana and Coda, and the Clockwise MCP which isn't part of the repo.
+
 ## Goal
 
 This system gives Claude Code deep context about your work as a PM, including:
@@ -66,7 +68,7 @@ Edit `config.json` with your API credentials:
 3. Copy the token
 
 #### Get Your Asana User ID
-1. Go to https://app.asana.com/0/my-profile-settings
+1. Go to https://app.asana.com/0
 2. Click on your profile
 3. Your user ID is in the URL: `https://app.asana.com/0/profile/[USER_ID]`
 
@@ -76,7 +78,7 @@ Edit `config.json` with your API credentials:
 
 #### Get Coda API Token
 1. Go to https://coda.io/account
-2. Scroll to "API Settings"
+2. Scroll to "Coda API tokens"
 3. Click "Generate API Token"
 4. Copy the token
 
@@ -232,7 +234,7 @@ Example prompts:
 - `config.json` is gitignored - your API keys stay local
 - Consider using a separate Asana project for personal tasks
 - Review what context you commit to git (especially if making this public)
-- The `.mcp.json` file is symlinked - update if your MCP config is elsewhere
+- The `.mcp.json` file is symlinked to ~/figma/figma which is where your monorepo should be installed locally - update if your MCP config is elsewhere
 
 ## Customization Ideas
 
@@ -266,7 +268,3 @@ Example prompts:
 ## Contributing
 
 This is a template - fork it and make it your own! If you add useful features or tools, consider sharing them back.
-
-## License
-
-MIT - Use this however helps you be a better PM.
