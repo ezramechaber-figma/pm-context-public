@@ -2,6 +2,8 @@
 
 A comprehensive context management system for Product Managers using Claude Code. This repository provides tools, templates, and workflows to help Claude understand your role, projects, and stakeholders - making it a more effective product coach and assistant.
 
+[![thumbnail](https://github.com/user-attachments/assets/e2f0a3ec-46f5-426e-99aa-6e6825529b86)](https://www.loom.com/share/1fbfa633e7c64378a2abaf2892e84aac)
+
 **Note:** This documentation and project assumes you have access to the monorepo figma/figma. If you don't, the MCPs won't work. Because Asana's MCP (as well as Notion/Slack) are only scoped to public info, I actually don't use the MCPs much. Instead, I find myself using custom CLIs for Asana and Coda, and the Clockwise MCP which isn't part of the repo.
 
 ## Goal
